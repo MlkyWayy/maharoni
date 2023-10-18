@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image" href="dist/img/Logo.png" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 230px;
+      }
+    </style>
+    <title>Maharoni</title>
+  </head>
+  <body class="bg-primary max-h-screen">
+    <!-- Header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="" class="block"><img src="dist/img/Logo.png" alt="" class="w-16 py-4" /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" class="block absolute right-4 md:hidden">
+              <span class="w-[30px] h-[2px] my-2 block bg-white transition duration-300 origin-top-left"></span>
+              <span class="w-[23px] h-[2px] my-2 block bg-white transition duration-300"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-white transition duration-300 origin-bottom-left"></span>
+            </button>
+            <nav id="nav-menu" class="hidden absolute py-5 bg-second shadow-lg rounded-lg max-w-[250px] w-full right-4 top-20 transition duration-300 md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none">
+              <ul class="block md:flex">
+                <li class="group"><a href="index.html" class="text-base md:text-second text-primary py-2 mx-8 group-hover:opacity-50 flex md:font-medium">Home</a></li>
+                <li class="group"><a href="page/product.html" class="text-base md:text-second text-primary py-2 mx-8 group-hover:opacity-50 flex md:font-medium">Product</a></li>
+                <li class="group"><a href="page/about.html" class="text-base md:text-second text-primary py-2 mx-8 group-hover:opacity-50 flex md:font-medium">About</a></li>
+                <li class="group"><a href="page/login.html" class="text-base md:text-second text-primary py-2 mx-8 group-hover:opacity-50 flex md:font-medium">Login</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bulet absolute md:top-0 md:left-0 md:w-full md:h-full w-full h-full -bottom-40"></div>
+    <!-- Hero -->
+    <section class="pt-24 relative md:pt-24">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 md:w-1/2">
+            <h1 class="text-xl font-bold text-second md:text-xl lg:text-5xl md:mb-6 mb-2">It's not just snack</h1>
+            <h1 class="text-xl font-bold text-second md:text-xl lg:text-5xl md:mb-5 mb-2">It's <span class="font-amarilo text-zinc-900">Mahar-Oni</span></h1>
+            <p class="text-sm text-second mb-5 md:mb-10 md:text-l lg:text-xl">"Rasakan cemilan yang kamu gemari dengan Maharoni. Temukan kenikmatannya sekarang!"</p>
+            <a href="" class="text-sm md:text-base font-semibold text-primary bg-second py-3 px-6 rounded-full hover:shadow-lg hover:bg-opacity-80 transition duration-200 ease-in-out">Pesan Sekarang!</a>
+          </div>
+          <div class="w-full self-end px-4 md:w-1/2">
+            <div class="relative md:left-0-0 mt-16 md:mt-10 md:flex">
+              <div class="md:w-[90%] w-full mr-5">
+              <div class="swiper mySwiper w-full">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="dist/img/Mokap1.png" alt="" class="w-52" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="dist/img/MokapCheese.png" alt="" class="w-52" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="dist/img/MokapOrigani.png" alt="" class="w-52" />
+                  </div>
+              </div>
+            </div>
+          </div>
+            <ul class="flex justify-center gap-10 mt-5 md:flex-col">
+              <li>
+                <a href=""><img src="dist/img/Instagram.svg" alt="Instagram" class="hover:opacity-80 hover:scale-105 transition duration-200 md:w-9" /></a>
+              </li>
+              <li>
+                <a href=""><img src="dist/img/Tiktok.svg" alt="Tiktok" class="hover:opacity-80 hover:scale-105 transition duration-200 md:w-9" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My JS -->
+    <script src="dist/js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+      });
+    </script>
+  </body>
+</html>
