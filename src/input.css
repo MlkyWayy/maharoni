@@ -44,3 +44,17 @@ body {
   width: 300px;
   height: 300px;
 }
+
+.skanan {
+  transform: translate(100px, 0px);
+  @apply opacity-0 pointer-events-none;
+}
+
+.skiri {
+  transform: translate(-100px, 0px);
+  @apply opacity-0 pointer-events-none;
+}
+
+.pindah {
+  @apply -translate-x-[230%];
+}
