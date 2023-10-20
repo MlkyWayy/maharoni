@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: "#FFB33D",
         second: "#FCFFC7",
+        coklat: "#D68200",
       },
       fontFamily: {
         amarilo: "amarillo",
