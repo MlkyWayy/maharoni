@@ -978,26 +978,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1099,6 +1079,9 @@ video {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-image: url(../dist/img/BGmakroni.svg);
+  background-size: cover;
+  backdrop-repeat: no-repeat;
 }
 
 @font-face {
@@ -1351,10 +1334,6 @@ body {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
   }
 
   .md\:max-w-full {
